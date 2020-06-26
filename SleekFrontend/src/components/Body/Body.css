@@ -1,0 +1,120 @@
+.body{
+    font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: large;
+  background: black;
+  z-index: 30;
+  
+}
+
+.cover{
+  position: relative;
+  overflow: hidden;
+  height: 85vh;
+  max-height: 850px;
+  background-color: black;
+  margin: 0;
+  background-image: url('blur-1867166_1280.jpg');
+  background-repeat: no-repeat;
+}
+.triangle {
+  position: absolute;
+  right: 10px;
+  width: 52%;
+  height: 115%;
+  background: linear-gradient(150deg,rgb(111, 128, 130) 15%,#534a96 70%,#435261 94%);
+  transform: rotate(5deg);
+  transform-origin: bottom right;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.cover h1{
+  position: relative;
+  color: antiquewhite;
+  text-align: center;
+  margin: 0;
+  padding: 33vh 0;
+  font-size: 64px;
+  
+}
+
+
+hr{
+    margin: 3%;
+}
+
+.title{
+    background: black;
+    color: white;
+    
+}
+
+
+
+.title h1 {
+    font-size: 5rem;
+    text-align: left;
+    padding: 5%;
+    font-weight: 700;
+}
+
+.fade-in-section {
+    opacity: 0;
+    
+    visibility: hidden;
+    transition: opacity 2s ease-out, transform 2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+.title h3{
+    font-size: 2rem;
+    text-align: right;
+    margin: 5%;
+    
+}
+
+@media (max-width: 952px) {
+  .cover{
+    height: 78vh;
+  }
+  .triangle{
+    width: 120vw;
+  }
+  .cover h1 {
+    font-size: 55px;
+  }
+  .title h1 {
+    font-size: 4rem;
+  }
+  .title h3{
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  
+  .cover h1 {
+    font-size: 40px;
+  }
+  .triangle {
+    height: 120vh;
+  }
+  .title{
+    padding: 6% 0;
+  }
+  .title h1 {
+    font-size: 2.5rem;
+    padding: 2%;
+    
+  }
+  .title h3{
+    font-size: 1rem;
+  }
+}

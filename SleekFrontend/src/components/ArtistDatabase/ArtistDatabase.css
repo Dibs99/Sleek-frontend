@@ -1,0 +1,89 @@
+.artistBoxes-container {
+    width: 100vw;
+    
+    
+}
+
+.artistBoxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    width: 90vw;
+    margin: 0 auto;
+    
+    flex-wrap: wrap;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    
+}
+
+.artistBox {
+    text-align: center;
+    margin: 3% 5%;
+    color: rgb(150, 150, 150);
+    max-width: 40%;
+    
+}
+
+.artistBox img {
+    width: 100%;
+    height: 250px;
+    
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+    transition: transform 300ms ease-out;
+}
+
+.artistBox img:hover {
+    opacity: .7;
+    transform: scale(1.05);
+}
+
+.artistDeets{
+    background: #222222;
+    border-radius: 0px 0px 25px 25px;
+    padding-top: 10px;
+    color:aliceblue;
+    
+    
+    
+}
+
+.boxBottom{
+    border-radius: 0px 0px 25px 25px;
+    padding: 10px;
+   
+}
+.boxBottom:hover{
+    background: #5fa8d3;   
+}
+
+.artistDeets h4 {
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-family: 'Raleway';
+    
+}
+
+
+
+.hr{
+    width: 50%;
+    margin: auto;
+}
+
+@media (max-width: 950px) {
+    .artistBoxes{
+        width: 100vw;
+    }
+
+    .artistBox{
+        max-width: 100%;
+    }
+    .artistDeets h4 {
+        margin: 1.3rem;
+    }
+}

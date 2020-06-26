@@ -1,0 +1,42 @@
+.artist-container {
+   
+}
+
+.artist-title {
+    width: 100vw;
+    display: inline-block;
+    margin-top: 100px;
+    text-align: center;
+    color: black;
+    
+}
+
+
+.artist-title h1 {
+    margin-bottom: 20px;
+}
+
+
+.artist-form {
+    display: flex;
+    align-items: center;
+    margin-left: 11vw;
+}
+
+
+.artist-form select {
+    font-size: 1.2rem;
+    padding: 1.5%;
+    background-color: rgb(190, 190, 190);
+    font-family: 'Raleway';
+    
+    border-radius: 25px;
+    
+}
+
+@media (max-width: 900px) {
+    .artist-form {
+        justify-content: center;
+        margin-left: 0;   
+    }
+}

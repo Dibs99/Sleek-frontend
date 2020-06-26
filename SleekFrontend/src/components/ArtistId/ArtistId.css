@@ -1,0 +1,178 @@
+.artistId{  
+    height: 1500px;
+    
+    
+}
+
+.heroImage {
+    position: relative;
+    width: 100%;
+    z-index: -80;
+    height: 700px;
+    max-height: auto;
+    background: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 80px;
+}
+
+.heroImage img {
+    width: 100%;
+    height: auto;
+    opacity: .5;
+    position: absolute;
+}
+
+.heroImage h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+    
+    
+    
+    z-index: 100;
+}
+
+.artistId .body {
+    padding-top: 3%;
+    width:80%;
+    margin: 0 auto;
+    background-color: white;
+    height: 100%;
+    
+    
+    
+}
+
+.body h2 {
+    margin: 0 50% 5px 0;
+    padding-left: 5%;
+    
+    
+}
+.bodyBackground {
+    background-color: #222222;
+}
+
+
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.description p {
+    width: 50%;
+    padding: 5%;
+}
+.description iframe {
+    width: 50%;
+    margin: 5%;
+}
+
+.artist-review h4 {
+    margin: 0;
+    padding: 5% 10% 0 10%;
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}
+
+.artist-review h3 {
+    color: #5fa8d3;
+    margin-left: 20%;
+}
+.artist-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+.artist-button-hide {
+    
+    display: none;
+}
+.get-a-quote-hide {
+    display: none;
+    
+}
+
+.get-a-quote {
+    display: contents;
+}
+.artist-button button {
+    
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: #222222;
+}
+
+.artist-button button:hover{
+    background-color: #5fa8d3;
+    cursor: pointer;
+}
+
+@media(max-width: 1600px) {
+    .heroImage {
+        height: 550px;
+    }
+    .artistId .body {
+        width: 90%;
+    }
+}
+
+@media(max-width: 1300px) {
+    .heroImage {
+        height: 450px;
+    }
+}
+@media(max-width: 1100px) {
+    .heroImage {
+        height: 350px;
+    }
+    .artistId .body {
+        width: 100%;
+    }
+}
+@media(max-width: 750px) {
+    .heroImage {
+        height: 230px;
+        padding-bottom: 3%;
+        top: 45px;
+    }
+
+
+    .heroImage h1 {
+        font-size: 60px;
+    }
+    .description {
+        flex-wrap: wrap;
+        
+    }
+    .description p {
+        width: 95%;
+        padding: 5%;
+    }
+    .description iframe {
+        width: 95%;
+        
+    }
+}
+
+@media(max-width: 500px) {
+    .body h2 {
+        font-size: 1.3em;
+        margin-right: 0%;
+    }
+    .heroImage h1 {
+        padding-bottom: 3%;
+    }
+}
