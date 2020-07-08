@@ -1,37 +1,8 @@
+## Description
 This is a website for a music agency which shows all the information for the performers dynamically. It can be used to send an email straight to the performer, or through the contact form to have an agent organise the entertainer on your behalf. The website is fully responsive, and supports all latest browsers.
 
-``` javascript
-import React from 'react';
-import './ArtistDatabase.css';
-import {
-    Link, 
-  } from "react-router-dom";
+## Install
+Download my code by hitting the green "clone or download" button above and hit download zip. Run `npm install` to install the dependencies. If you run `npm start` now, you should see that your app renders the same as the live version
 
-
-
-export default function ArtistDatabase(props) {
-    return(  
-    <div>
-    <div className="artistBoxes-container">
-        <div className="artistBoxes">
-       {props.artistDatabase.map(artist => {
-       return  <div className="artistBox" key={artist.id}>
-       <Link  to={`/${artist.id}`} style={{textDecoration: 'none'}}>
-           <img src={process.env.PUBLIC_URL + 'assets/' + artist.image} alt="artist"/>
-         
-       <div className='artistDeets boxBottom'>
-           <h4>{artist.name}</h4>
-       </div>
-       </Link>    
-     </div>
-       })
-    }
-    </div>
-    </div>
-    
-   
-    </div>
-    
-    );
-}
-
+## Live Version
+This can be found at http://188.166.240.15/
